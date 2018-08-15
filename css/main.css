@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin-top: 35vh;
+}
+
+#lg {
+    width: 13em;
+    display: none;
+}

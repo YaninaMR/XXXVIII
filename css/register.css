@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-img {
+    width: 2.7em;
+}
+
+.nav-wrapper {
+    background-color: #ffff;
+}
+
+.nav-wrapper a {
+    color: #000000;
+}
+
+.list-home {
+    color: #000000;
+}
+
+.center-align {
+    margin-top: 2em;
+}
+
+.style-slider {
+    margin-top: 3em;
+}
+.style-login {
+    margin-top: 3em;
+}
+img.fa-style {
+    background: rgba(92, 70, 85, 0.5);
+}
+.login-info{
+    background-color: #edecec;
+    border-radius: 20px 0;
+    box-shadow: 0 0 3px #bab6b6;
+}

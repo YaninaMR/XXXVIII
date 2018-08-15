@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Enlazamos nuestro framework _materialize_ -->
+    <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+    <!-- Enlazamos nuestra hoja de estilo css -->
+    <link rel="stylesheet" href="../css/newsfeed.css">
+    <!-- Enlazamos nuestro logo -->
+    <link rel="shortcut icon" href="../assets/logo/logo-sinfondo1.png">
+    <!-- Enlazamos los íconos de mayterialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Enlazamos íconos de fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Q'apiriy</title>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#">
+                <img src="../assets/logo/logo-navbar.png" class="logo" alt="">
+            </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down list-home">
+                <li>
+                    <div id="root" class="image-container">
+                        <img id="imgprofile" class="circle img-perfil" src="">
+                    </div>
+                </li>
+                <li>
+                    <a class="btn btn-floating white pulse">
+                        <i class="material-icons" style="color: black">cloud</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="view-profile.html" class="btn btn-floating white cyan">
+                        <i class="material-icons" style="color: black">account_circle</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Video introductorio de la red social -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <video class="responsive-video" loop muted autoplay preload="auto">
+                <source src="../assets/video-multimedia/Proa.mp4.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            <div class="row">
+                <div class="col s12">
+                    <!-- Textarea para agregar nuevas publicaciones -->
+                    <div class="profile-post">
+                        <form action="">
+                            <textarea id="text-area" class="noscroll" clid="textarea1" placeholder="¿Algo que compartir?"></textarea>
+                            <button id="post-btn" class="waves-effect waves-light btn right" type="submit" value="publica" disabled>Publica</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <h2 class="header">Newsfeed</h2>
+            <div class="profile-posts-container">
+                <!-- Nuevas publicaciones aquí -->
+            </div>
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">
+                        <img src="../assets/img/lourdes.png" class="circle" alt="Contact Person">
+                        <strong>Lourdes Vilchez</strong>
+                    </div>
+                    <div class="col s7 col l7">
+                        <img class="responsive-img" src="../assets/img/noticia3.png" alt="">
+                    </div>
+                    <div class="col s5 col l5">
+                        <img class="responsive-img" src="../assets/img/direccion.png" alt="">
+                    </div>
+                    <div class="collapsible-body">
+                        <span>Voluntariado en Orfanatos (Ayacucho) Existen dos tipos de Orfanatos en los que el participante puede
+                            apoyar. El primero es para niños abandonados o huérfanos de edades entre 1 semana de nacidos
+                            hasta 2 años de edad y el el orfanato para niños entre 2 a 17 años de edad, en el cual hay aproximadamente
+                            70 niños y niñas. Los orfanatos proveen refugio, además brinda atención y alimentación a los
+                            niños. Los voluntarios podrán ayudar en diferentes áreas del orfanato como en el cuidado y atención
+                            de los niños, así como también podrán jugar con ellos, asistir en su labores escolares, ayudar
+                            en la preparación de sus comidas, alimentarlos, etc.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <div class="chip">
+                            <img src="../assets/img/franco.png" alt="Contact Person"> Franco
+                        </div>
+                    </div>
+                    <div class="collapsible">
+                        <div class="comentary">
+                            <span>Ymca me permitió conocer cómo viven las familias del lugar, conocer sus costumbres, su manera
+                                de pensar y de ver el mundo; además me permitió entrar a un hospital, conocer al personal
+                                y poder trabajar con ellos en equipo; de esta manera pude colaborar desde adentro y entender
+                                la realidad del país, considerando que la vida allá es mucho más lenta y se necesita de paciencia
+                                para llevar cualquier proyecto a cabo.</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <img src="../assets/img/logoonu.jpg" class="circle onu" alt="Contact Person">
+                        <strong>ONU Perú</strong>
+                    </div>
+                    <div class="collapsible">
+                        <img class="responsive-img" src="../assets/img/noticiaonu.png" alt="">
+                    </div>
+                </li>
+            </ul>
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Enlazamos la librería Jquery -->
+    <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+    <!-- Enlazamos nuestro proyecto de firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <!-- Enlazamos el archivo jquery de materialize -->
+    <script src="../vendors/materialize/js/materialize.min.js"></script>
+    <!-- Enlazamos nuestro archivo JS -->
+    <script src="../js/newsfeed.js"></script>
+</body>
+
+</html>

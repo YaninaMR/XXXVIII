@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Section Fotos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;UTF-8">
+  <meta http-equiv="cache-control" content="cache">
+  <meta http-equiv="content-language" content="es">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/galeryfriends.css">
+  <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+ 
+  <div class="container"> 
+    <div class="row">
+     <div class="col s12 l12">  
+          
+         
+         <label for="image_uploads" class="files"><i class="material-icons delete-file">add_a_photo</i><span class="textol">Agrega tus fotos</span></label>
+         <input type="file" class="input-files" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png, .mp4" value="" multiple>
+         <div id="name"class="name"></div>
+         <br>
+         <button name="btn-out" id="btn-out">salir</button>
+         <div id="icon" class="icon">
+         <img src="" alt="">
+         </div> 
+     </div> 
+    </div>
+  </div> 
+
+  <div class="modal slide fade" id="modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+   <div class="modal-dialog modal-lg">
+     <div class="modal-content">
+           <div class="modal-body">
+             <div class="sliderimgs col s12 l12">
+               <a href="#" id="back" class="text-primary-color "><i class=" Medium material-icons left" aria-hidden="true">skip_previous</i></a>
+               <a href="#" id="next" class="text-primary-color "><i class="Medium material-icons right" aria-hidden="true">skip_next</i></a>
+               <img src="" alt="" id="img">  
+                     
+              </div>
+           </div>
+      </div>
+    </div>
+       
+  </div>
+ 
+  <div class="container">
+     <div class="row">
+      <div class="col s12 m12 l12">  
+      <div class="preview">
+            
+      </div>
+     </div>
+    </div>
+  </div>  
+  <div class="container">
+   <div class="row">
+    <div class="col s12 m12 l12">  
+      <div class="arephotos">        
+             
+      </div> 
+       <div id="arephotosFB">          
+      </div> 
+      <div>
+      <p>el foto del usuario</p>
+    	  <div id="user-photo">
+    	  </div>
+       <p>el nombre del usuario</p> 
+    	  <div id="user-name">
+    	  </div>
+      </div>  
+   </div>
+  </div> 
+ 
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
+    </script>
+    
+  <!-- Base de datos -->
+  <!-- <script src='../js/dataVolunteer.js'></script>-->
+  <!-- archivos JS
+  <script src="../js/appFotos.js"></script> -->
+  <!--<script src="../js/appFotosv11.js"></script>-->  
+  <script src="../js/datafa.js"></script>
+  <script src="../js/appfa.js"></script>
+  </body>
+
+</html>

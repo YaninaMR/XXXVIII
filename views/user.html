@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Amigos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;UTF-8">
+  <meta http-equiv="cache-control" content="cache">
+  <meta http-equiv="content-language" content="es">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400,500,600,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/76a445f0fd.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/galeryfriends.css">
+</head>
+
+<body>
+    <nav class="white" role="navigation">
+
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#">
+          <img  class="logito" src="../assets/logo/logo-navbar.png">
+       <!-- Barra lateral en vista mobile -->
+        <ul id="mobile-demo" class="side-nav">
+          <li>
+            <a href="index.html" class="btn-flat transparent">Inicio
+              <i class="material-icons left">home</i>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="btn-flat transparent">Explorar
+              <i class="material-icons left">search</i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn-flat transparent">Mi cuenta
+              <i class="material-icons left">account_circle</i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn-flat transparent">Mensajes
+              <i class="material-icons left">message</i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn-flat transparent">Herramientas
+              <i class="material-icons left">tune</i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn-flat transparent logout">Cerrar Sesión
+              <i class="material-icons left">power_settings_new</i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <div class="valign-wrapper container">      
+      <ul class="left ">
+        <li>         
+        </li>        
+      </ul>
+    </div>
+  
+   
+  <!-- Modal -->
+<div class="modal fade" id="modal-sm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+       </div>
+      <div class="modal-body">
+        <div id="friendcl"></div>
+        <div class="row">  
+          <div class="col s12">             
+             <button type="button" class="col s6 btn btn-flat btn-pad barra follow-friend">ya no seguir</button>             
+             <button class="col s6 modal-action modal-close waves-effect waves-green btn-flat btn-pad">Cancelar</button> 
+         </div>
+        </div>
+      </div>
+       <h6 class="modal-title"></h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+<!--div contenedor inicio-->
+<div id="container-contacts">
+   <section class="contacts" id="contact-social">
+    
+   </section> 
+</div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- Base de datos -->
+  <script src='../js/dataVolunteer.js'></script>
+  <!-- archivos JS -->
+  <script src="../js/appVolunteer.js"></script>
+   
+</body>
+
+</html>

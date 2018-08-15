@@ -1,0 +1,47 @@
+/*Reseteamos los valores iniciales de las cajas*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-wrapper {
+    background-color: #ffff;
+}
+
+.nav-wrapper a {
+    color: #000000;
+}
+
+.list-home {
+    color: #000000;
+}
+
+.img-perfil {
+    width: 3em;
+}
+
+.logo {
+    margin-top: 1em;
+    width: 10em;
+}
+
+.parallax-container {
+    height: 250px;
+}
+
+.perfil {
+    width: 10em;
+}
+
+.onu {
+    width: 6em;
+    height: 6em;
+}
+
+.profile-post2 {
+    padding: 1.5em 1em;
+    border: 1px solid lightgray;
+    margin-bottom: 0.3em;
+}

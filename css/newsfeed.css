@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-wrapper {
+    background-color: #ffff;
+}
+
+.nav-wrapper a {
+    color: #000000;
+}
+
+.list-home {
+    color: #000000;
+}
+
+.img-perfil {
+    width: 3em;
+}
+
+.parallax-container {
+    height: 250px;
+}
+
+.responsive-video {
+    overflow: hidden;
+    width: 100%;
+}
+
+.logo {
+    margin-top: 1em;
+    width: 10em;
+}
+
+.onu {
+    width: 6em;
+    height: 6em;
+}
+
+.comentary {
+    padding: 1em;
+}
+
+.profile-post2 {
+    padding: 1.5em 1em;
+    border: 1px solid lightgray;
+    margin-bottom: 0.3em;
+}

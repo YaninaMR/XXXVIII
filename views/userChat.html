@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+   <title>Chat Firebase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;UTF-8">
+  <meta http-equiv="cache-control" content="cache">
+  <meta http-equiv="content-language" content="es">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400,500,600,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/76a445f0fd.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  
+  <div class="container"> 
+    <div class="row">
+     <div class="col s12">
+     <h3><i class="material-icons">chat_bubble</i>Chat Q'apiry</h3> 
+     <div id="chat">
+     </div>
+     <input type="text" id="message">
+     <button class="btn" id="enviar">Enviar</button>
+     </div>   
+   </div>  
+  </div> 
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- Base de datos 
+  <script src='../js/dataVolunteer.js'></script>
+   archivos JS 
+  <script src="../js/appFotos.js"></script> -->
+  <script src="../js/appChat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC4YzfP_Naxc6U8hhhN9gy8kIFmo0ARNZc",
+    authDomain: "first-project-66342.firebaseapp.com",
+    databaseURL: "https://first-project-66342.firebaseio.com",
+    projectId: "first-project-66342",
+    storageBucket: "first-project-66342.appspot.com",
+    messagingSenderId: "526633369509"
+  };
+  firebase.initializeApp(config);
+  </script>
+   
+</body>
+</html>
